@@ -13,5 +13,25 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return View::make('home');
+});
+
+Route::get('/pokeipsum', function()
+{
+	return View::make('pokeipsum');
+});
+
+Route::post('/pokeipsum', function()
+{
+	return View::make('pokeipsum');
+});
+
+Route::get('/pokepeople', function()
+{
+	return View::make('pokepeople');
+});
+
+Route::post('/pokepeople', function()
+{
+	return View::make('pokepeople');
 });
