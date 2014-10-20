@@ -23,6 +23,7 @@ Route::get('/pokeipsum', function()
 
 Route::post('/pokeipsum', function()
 {
+	
 	return View::make('pokeipsum');
 });
 
@@ -33,5 +34,19 @@ Route::get('/pokepeople', function()
 
 Route::post('/pokepeople', function()
 {
+	// array of pokemon
+	// loop through # of people
+		// 
 	return View::make('pokepeople');
+});
+
+Route::get('/testing', function()
+{
+	$fruit = Array('Apples', 'Oranges', 'Pears');
+    echo Pre::render($fruit,'Fruit');
+
+	$faker = Faker::create();
+    echo $faker->firstName($gender = null);
+    echo $faker->address;
+    echo $faker->date($format = 'm-d-Y', $max = 'now', $min='1940');
 });

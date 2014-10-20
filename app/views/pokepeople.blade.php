@@ -16,6 +16,8 @@
             	{{ Form::text('numPeople', '5') }}
             	{{ Form::label('Include Birthday?', 'Include Birthday?') }}
             	{{ Form::checkbox('includeBirthday', '1', true) }}
+            	{{ Form::label('Include Address?', 'Include Address?') }}
+            	{{ Form::checkbox('includeAddress', '1', true) }}
             	{{ Form::label('Include Description?', 'Include Description?') }}
             	{{ Form::checkbox('includeDescription', '1', true) }}
             	{{ Form::submit('Submit') }}

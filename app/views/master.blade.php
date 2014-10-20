@@ -1,5 +1,5 @@
 <!doctype html>
-@yield('require')
+<?php require="p3/app/models/logic.php" ?>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -21,7 +21,7 @@
                 <div id="navbarCollapse" class="collapse navbar-collapse">
                 	<li><a href="/">Home</a></li>
                 	<li><a href="/pokeipsum">PokeIpsum</a></li>
-                	<li><a href="/pokeipsum">PokePeople</a></li>
+                	<li><a href="/pokepeople">PokePeople</a></li>
                 </div>
             </div>
         </nav>
