@@ -1,11 +1,12 @@
 <?php
 
+// array of pokemon
+$pokemon = file('/Applications/MAMP/htdocs/p3/app/models/pokemon.txt');
+
 // class ipsum
 class ipsum {
 
-	// array of pokemon
-	private static $pokemon = file('pokemon.txt');
-	// property to store output
+	// properties
 	public $ipsumText;
 	public $paragraphSize;
 	public $numParagraphs;
@@ -32,7 +33,7 @@ class ipsum {
 		// add punctuation
 		$sentence = $sentenceArray[9] . ".";
 		// capitalize sentence
-		$sentence = ucfirst($sentence);
+		$sentence = ucfirst(strtolower($sentence));
 		return $sentence;
 	}
 
@@ -72,8 +73,6 @@ class ipsum {
 // class person
 class person extends ipsum {
 
-	// array of pokemon
-	private static $pokemon = file('pokemon.txt');
 	// property to store name
 	public $name;
 	// property to store birthday

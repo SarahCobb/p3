@@ -42,6 +42,10 @@ Route::post('/pokepeople', function()
 
 Route::get('/testing', function()
 {
+	$public = app_path();
+	echo $public;
+
+
 	$fruit = Array('Apples', 'Oranges', 'Pears');
     echo Pre::render($fruit,'Fruit');
 
