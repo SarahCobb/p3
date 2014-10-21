@@ -1,5 +1,5 @@
 <!doctype html>
-<?php require '/Applications/MAMP/htdocs/p3/app/models/logic.php' ?>
+<?php require_once '/Applications/MAMP/htdocs/p3/app/models/logic.php' ?>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">

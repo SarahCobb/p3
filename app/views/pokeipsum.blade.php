@@ -28,7 +28,7 @@
     </div>
     <div class="col-md-6">
         <div class="row text-center">
-        	{{-- output --}}
+        	{{ $pokeIpsum }}
         </div>
     </div>
 </div>

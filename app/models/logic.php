@@ -11,7 +11,7 @@ class ipsum {
 	public $paragraphSize;
 	public $numParagraphs;
 
-	// getter and setter methods
+	//getter and setter methods
 	public function getIpsum() {
 		return $this->ipsumText;
 	}
@@ -20,7 +20,7 @@ class ipsum {
 	}
 	public function setNumParagraphs ($numParagraphs) {
 		$this->numParagraphs = $numParagraphs;
-	}
+	} 
 	
 	// method to create a sentence
 	public function createSentence() {
@@ -58,7 +58,7 @@ class ipsum {
 	}
 
 	// method createIpsum, pass numParagraphs
-	public function createIpsum ($numParagraphs) {
+	function __constructor ($numParagraphs, $paragraphSize) {
 		// loop through # of paragraphs
 		for ($i = 0; $i < $numParagraphs; $i++) {
 			// create paragraph and add to output
@@ -73,13 +73,10 @@ class ipsum {
 // class person
 class person extends ipsum {
 
-	// property to store name
+	// properties
 	public $name;
-	// property to store birthday
 	public $birthday;
-	// property to store address
 	public $address;
-	// property to store description
 	public $description;
 
 	// getter methods
@@ -96,35 +93,46 @@ class person extends ipsum {
 		return $this->description;
 	}
 
-	// constructor to create person
-	function __construct () {
-		// faker creates first name
-		$firstName = $faker->firstName($gender = null);
-		// pull last name from pokemon list
-		$lastName = array_rand($pokemon, 1);
-		// combine first and last name
-		$name = $firstName . " " . $lastName;
-		return $name;	
-	}
-
-	// method setBirthday
+	// setter methods
 	public function setBirthday () {
 		// faker sets birthday
 		$birthday = $faker->date($format = 'm-d-Y', $max = 'now', $min='1940');
 		return $birthday;
 	}
-
-	// method setAddress
 	public function setAddress () {
 		// faker sets address
 		$address = $faker->address;
 		return $address;
 	}
-
-	// method setDescription
 	public function setDescription () {
 		// create sentence
 		$description = createSentence();
 		return $description;
 	}
+
+	// constructor to create person
+	function __construct ($includeAddress, $includeBirthday, $includeDescription) {
+		// instantiate new faker
+		$faker = Faker::create();
+		// faker creates first name
+		$firstName = $faker->firstName($gender = null);
+		// pull last name from pokemon list
+		$lastName = array_rand($pokemon, 1);
+		// combine first and last name
+		$pokePerson['name'] = $firstName . " " . $lastName;
+		// set birthday
+		if ($includeBirthday == true) {
+			$pokePerson['birthday'] = setBirthday();	
+		} 
+		// set address
+		if ($includeAddress == true) {
+			$pokePerson['address'] = setAddress();
+		}
+		// generate description
+		if ($includeDescription == true) {
+			$pokePerson['description'] = setDescription();
+		}
+		return $pokePerson;	
+	}
+
 };

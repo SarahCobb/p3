@@ -23,8 +23,16 @@ Route::get('/pokeipsum', function()
 
 Route::post('/pokeipsum', function()
 {
-	
-	return View::make('pokeipsum');
+	// get number of paragraphs
+	$numParagraphs = Input::get('numParagraphs');
+	// get paragraph size
+	$paragraphSize = Input::get('paragraphSize');
+	// instantiate a new ipsum object 
+	$newIpsum = new ipsum($numParagraphs, $paragraphSize);
+	$pokeIpsum = $newIpsum->getIpsum();
+	// pass pokeIpsum text to view
+	return View::make('pokeipsum')
+		->with('pokeIpsum', $pokeIpsum);
 });
 
 Route::get('/pokepeople', function()
@@ -34,20 +42,36 @@ Route::get('/pokepeople', function()
 
 Route::post('/pokepeople', function()
 {
-	// array of pokemon
-	// loop through # of people
-		// 
-	return View::make('pokepeople');
+	// get form request data
+	$numPeople = Input::get('numPeople');
+	$includeAddress = Input::get('Include Address?');
+	$includeBirthday = Input::get('Include Birthday?');
+	$includeDescription = Input::get('Include Description?');
+	// loop through number of people
+	for ($i = 0; $i < $numPeople; $i++) {
+		// create new person
+		$pokePerson = new person($includeAddress, $includeBirthday, $includeDescription);
+		// add person to people array
+		$pokePeople[i] = $pokePerson;
+	}
+	// pass people array to view
+	return View::make('pokepeople')
+		->with('pokePeople', $pokePeople);
 });
 
 Route::get('/testing', function()
 {
+
 	$public = app_path();
 	echo $public;
 
 
 	$fruit = Array('Apples', 'Oranges', 'Pears');
     echo Pre::render($fruit,'Fruit');
+
+    $newIpsum = new ipsum($numParagraphs, $paragraphSize);
+    $pokeIpsum = getIpsum();
+    echo $pokeIpsum;
 
 	$faker = Faker::create();
     echo $faker->firstName($gender = null);
