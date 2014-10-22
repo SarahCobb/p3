@@ -18,7 +18,7 @@
     </div>
     <div class="col-md-8">
         <div class="column row text-center">
-            <p><span class="inverseIndent highlight">loremIpsum = array(</span><br><br>
+            <p><span class="inverseIndent highlight">$loremIpsum = array(</span><br><br>
                 @foreach ($paragraphs as $key => $paragraph)
                     @if ($countParagraphs == $numParagraphs)
                         <p><span class="subHighlight">"</span>{{ $paragraph }}<span class="subHighlight">"</span></p><br>
