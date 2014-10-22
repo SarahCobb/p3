@@ -1,7 +1,7 @@
 @extends('master')
 
 @section('title')
-<title>PokeGenerator: A Developer's Best Friend</title>
+<title>Developer's Best Friend</title>
 @stop
 
 @section('content')
