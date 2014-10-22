@@ -10,7 +10,7 @@
     <div class="col-md-6">
     	<div class="top">
 	        <div class="row text-center">
-	            {{ Form::open(array('url' => '/pokeipsumresult', 'method' => 'POST')) }}
+	            {{ Form::open(array('url' => '/pokeipsum', 'method' => 'POST')) }}
 	            	{{ Form::label('Number of Paragraphs', 'Number of Paragraphs') }}
 	            	{{ Form::text('numParagraphs', '5') }}
 	            	<br>
@@ -28,6 +28,8 @@
     </div>
     <div class="col-md-6">
         <div class="row text-center">
+        	<?php echo $pokeIpsum ?>
+        	<?php echo $sentence ?>
         	
         </div>
     </div>

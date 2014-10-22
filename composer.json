@@ -6,7 +6,8 @@
 	"require": {
 		"laravel/framework": "4.2.*",
 		"fzaninotto/faker": "1.5.*@dev",
-		"paste/pre": "dev-master"
+		"paste/pre": "dev-master",
+		"badcow/lorem-ipsum": "dev-master"
 	},
 	"autoload": {
 		"classmap": [

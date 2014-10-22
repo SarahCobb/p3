@@ -1,7 +1,7 @@
 <?php
 
 // array of pokemon
-$pokemon = file('/Applications/MAMP/htdocs/p3/app/models/pokemon.txt');
+$pokemon = array('bulbasaur', 'charmander', 'squirte');
 
 // class ipsum
 class ipsum {
