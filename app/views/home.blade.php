@@ -9,20 +9,22 @@
 <div class="row">
     <div class="col-md-12">
     	<div class="top">
-    		<h2>Welcome to PokeGenerator!</h2>
-			<p>PokeGenerator is your one stop shop to create pokemon related lorem ipsum text and random users for your database. Click the buttons below or the links in the navigation bar to check it out.</p>
+    		<h2>Welcome to Developer's Best Friend!</h2>
+			<p>Developer's Best Friend is your one stop shop to create lorem ipsum text and random users for your database. Lorem Ipsum text will output as a PHP array, and users are served up as a JSON object.</p>
     	</div>
     </div>
 </div>
 <div class="row">
     <div class="col-md-6">
+        <br><br>
         <div class="row text-center">
-            <a href="/pokeipsum">PokeIpsum Generator</a>
+            <button class="btn-large"><a class="button" href="/pokeipsum">Lorem Ipsum Generator</a></button>
         </div>
     </div>
     <div class="col-md-6">
+        <br><br>
         <div class="row text-center">
-        	<a href="/pokepeople">PokePeople Generator</a>
+        	<button class="btn-large"><a class="button" href="/pokepeople">Random User Generator</a></button>
         </div>
     </div>
 </div>

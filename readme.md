@@ -25,5 +25,5 @@ Documentation for the entire framework can be found on the [Laravel website](htt
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
 
 http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-navbar.php
-https://www.google.com/fonts/specimen/Cutive+Mono
+https://www.google.com/fonts/specimen/Source+Code+Pro
 http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-forms.php

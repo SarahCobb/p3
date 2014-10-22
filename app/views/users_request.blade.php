@@ -7,32 +7,39 @@
 @section('content')
 
 <div class="row">
-    <div class="col-md-6">
-    	<div class="top">
-	        <div class="row text-center">
-	            {{ Form::open(array('url' => '/users', 'method' => 'POST')) }}
-	            	{{ Form::label('Number of People', 'Number of People') }}
-	            	{{ Form::text('numPeople', '5') }}
-	            	<br>
-	            	{{ Form::label('Include Birthday?', 'Include Birthday?') }}
-	            	{{ Form::checkbox('includeBirthday', '1', true) }}
-	            	<br>
-	            	{{ Form::label('Include Address?', 'Include Address?') }}
-	            	{{ Form::checkbox('includeAddress', '1', true) }}
-	            	<br>
-	            	{{ Form::label('Include Description?', 'Include Description?') }}
-	            	{{ Form::checkbox('includeDescription', '1', true) }}
-	            	<br>
-	            	{{ Form::submit('Submit') }}
+    <div class="col-md-4">
+	        <div class="column row text-center">
+	            {{ Form::open(array('url' => '/users', 'method' => 'POST', 'class' => 'form-horizontal')) }}
+	            	<div class="form-group">
+	            		{{ Form::label('Number of People', 'Number of People',
+	            						array('class' => 'control-label col-s-2 text')) }}
+	            		{{ Form::text('numPeople', '5',
+	            						array('class' => 'form-control')) }}
+	            	</div><br>
+	            	<div class="form-group">
+				        {{ Form::label('Include Birthday?', 'Include Birthday?',
+				            			array('class' => 'control-label col-s-2')) }}
+				        {{ Form::checkbox('includeBirthday', 'true', true) }}
+	            	</div><br>
+	            	<div class="form-group">
+	            		{{ Form::label('Include Description?', 'Include Description?',
+	            						array('class' => 'control-label col-s-2')) }}
+	            		{{ Form::checkbox('includeDescription', 'true', true) }}
+	            	</div><br>
+	            	<div class="form-group">
+	            		{{ Form::submit('Submit') }}
 				{{ Form::close() }}
 	        </div>
 	    </div>
     </div>
-    <div class="col-md-6">
-        <div class="row text-center">
 
-        </div>
+
+    <div class="col-md-8">
+	        <div class="column">
+	        	
+	        </div>
+	    </div>
     </div>
-</div>
+
 
 @stop

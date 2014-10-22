@@ -174,9 +174,13 @@ Route::post('/ipsum', function() {
 	$numParagraphs = Input::get('numParagraphs');
 	$generator = new Badcow\LoremIpsum\Generator();
 	$paragraphs = $generator->getParagraphs($numParagraphs);
-	$output = implode('<p>', $paragraphs);
+	$output = implode('<p><br>', $paragraphs);
+	$countParagraphs = 0;
 	return View::make('ipsum')
-		->with('output', $output);
+		->with('output', $output)
+		->with('paragraphs', $paragraphs)
+		->with('numParagraphs', $numParagraphs)
+		->with('countParagraphs', $countParagraphs);
 });
 
 Route::get('/users', function() {
@@ -193,11 +197,11 @@ Route::post('/users', function() {
 		$people[$i]['birthday'] = $faker->date($format = 'm-d-Y', $max = 'now', $min='1940');
 		$people[$i]['description'] = $faker->paragraph($nbSentences = 4);
 	};
-	$count = 0;
+	$countPeople = 0;
 	return View::make('users')
 		->with('people', $people)
 		->with('numPeople', $numPeople)
-		->with('count', $count)
+		->with('countPeople', $countPeople)
 		->with('includeBirthday', $includeBirthday)
 		->with('includeDescription', $includeDescription);
 });

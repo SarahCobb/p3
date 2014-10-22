@@ -36,25 +36,25 @@
 
     <div class="col-md-8">
 	        <div class="column">
-	        	<p><span class="bracket">[</span><br><br>
+	        	<p><span class="doubleInverseIndent">[</span><br><br>
 	        	@foreach($people as $entry => $person)
-	        		<?php $count++ ?>
-	        	    <p><span class="curlyBrace">{</span><br>
-	        	    <span class="key">"Name" :</span> "{{$person['name']}}",</p>
+	        		<?php $countPeople++ ?>
+	        	    <p><span class="inverseIndent">{</span><br>
+	        	    <span class="highlight">"Name" :</span> "{{$person['name']}}",</p>
 	        		@if ($includeBirthday)
-	        			<p><span class="key">"Birthday" :</span> "{{ $person['birthday'] }}",</p>
+	        			<p><span class="highlight">"Birthday" :</span> "{{ $person['birthday'] }}",</p>
 	        		@endif
 	        		@if ($includeDescription)
-	        			@if ($count == $numPeople)
-	        				<p><span class="key">"Description" :</span> "{{ $person['description'] }}"
-	        				<br><span class="curlyBrace">}</span></p></br>
+	        			@if ($countPeople == $numPeople)
+	        				<p><span class="highlight">"Description" :</span> "{{ $person['description'] }}"
+	        				<br><span class="inverseIndent">}</span></p></br>
 	        			@else
-	        				<p><span class="key">"Description" :</span> "{{ $person['description'] }}"
-	        				<br><span class="curlyBrace">},</span></p></br>
+	        				<p><span class="highlight">"Description" :</span> "{{ $person['description'] }}"
+	        				<br><span class="inverseIndent">},</span></p></br>
 	        			@endif
 	        		@endif
 	        	@endforeach
-	        	<p><span class="bracket">]</span><br>
+	        	<p><span class="doubleInverseIndent">]</span><br>
 	        </div>
 	    </div>
     </div>

@@ -2,7 +2,7 @@ body {
 	background: black;
 	color: white;
 	margin-top:50px;
-	font-family: 'Cutive Mono', serif;
+	font-family: 'Source Code Pro', serif;
 	font-size: 16px;
 
 }
@@ -17,7 +17,6 @@ h1 {
 	font-weight: bold;
 	padding-bottom: 12px;
 	text-align: center;
-	font-family: 'Cutive Mono', serif;
 }
 
 h2 {
@@ -25,7 +24,6 @@ h2 {
 	font-size:22px;
 	padding-bottom: 10px;
 	text-align: center;
-	font-family: 'Cutive Mono', serif;
 }
 
 h3 {
@@ -33,15 +31,14 @@ h3 {
 	font-size: 18px;
 	padding-bottom: 8px;
 	text-align: center;
-	font-family: 'Cutive Mono', serif;
 }
 
 p {
 	font-color: white;
 	font-size: 14px;
 	margin:0;
-	font-family: 'Cutive Mono', serif;
 	font-size: 16px;
+	text-align: left;
 }
 
 a {
@@ -52,16 +49,26 @@ a:hover {
 	color: white;
 }
 
-.key {
+a.button {
 	color: blue;
 }
 
-.curlyBrace {
-	margin-left: -30px;
+.highlight {
+	color: blue;
+	font-weight: 600;
 }
 
-.bracket {
-	margin-left: -60px;
+.subHighlight {
+	color: green;
+	font-weight: 600;
+}
+
+.inverseIndent {
+	margin-left: -25px;
+}
+
+.doubleInverseIndent {
+	margin-left: -50px;
 }
 
 img {
@@ -74,6 +81,11 @@ form {
 
 input[type='submit'] {
 	color: red;
+	font-weight: 600;
+}
+
+input[type="text"] {
+	color: black;
 }
 
 .form-control {
@@ -94,4 +106,9 @@ label.text {
 
 .column {
 	margin: 50px;
+}
+
+button.btn-large {
+	font-weight: 700;
+	font-size: 24px;
 }
