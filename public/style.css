@@ -1,10 +1,11 @@
+/* Basic Styles */
+
 body {
 	background: black;
 	color: white;
 	margin-top:50px;
 	font-family: 'Source Code Pro', serif;
-	font-size: 16px;
-
+	font-size: 15px;
 }
 
 div {
@@ -53,6 +54,59 @@ a.button {
 	color: blue;
 }
 
+img {
+	padding: 0px;
+}
+
+button.btn-large {
+	font-weight: 700;
+	font-size: 24px;
+}
+
+/* Form Styles */
+
+form {
+	text-align: left;
+}
+
+input[type='submit'] {
+	color: red;
+	font-weight: 600;
+}
+
+input[type="text"] {
+	color: black;
+}
+
+
+label {
+	color: yellow;
+}
+
+label.text {
+	margin-bottom: 20px!important;
+}
+
+label.error {
+	color: red;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+label#numPeople-error {
+	margin-left: -15px;
+}
+
+/* Custom Classes */
+
+.form-control {
+	max-width: 160px;
+}
+
+.form-group {
+	margin-bottom: -5px;
+}
+
 .highlight {
 	color: blue;
 	font-weight: 600;
@@ -71,44 +125,6 @@ a.button {
 	margin-left: -50px;
 }
 
-img {
-	padding: 0px;
-}
-
-form {
-	text-align: left;
-}
-
-input[type='submit'] {
-	color: red;
-	font-weight: 600;
-}
-
-input[type="text"] {
-	color: black;
-}
-
-.form-control {
-	max-width: 160px;
-}
-
-.form-group {
-	margin-bottom: -5px;
-}
-
-label {
-	color: yellow;
-}
-
-label.text {
-	margin-bottom: 20px!important;
-}
-
 .column {
 	margin: 50px;
-}
-
-button.btn-large {
-	font-weight: 700;
-	font-size: 24px;
 }

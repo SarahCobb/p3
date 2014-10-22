@@ -1,5 +1,4 @@
 <!doctype html>
-<?php require '/Applications/MAMP/htdocs/p3/app/models/logic.php' ?>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -35,5 +34,8 @@
         </nav>
 		@yield('content')
 	</div>
+<script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
+<script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+@yield('validation')
 </body>
 </html>

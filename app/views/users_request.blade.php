@@ -9,7 +9,7 @@
 <div class="row">
     <div class="col-md-4">
 	        <div class="column row text-center">
-	            {{ Form::open(array('url' => '/users', 'method' => 'POST', 'class' => 'form-horizontal')) }}
+	            {{ Form::open(array('url' => '/users', 'method' => 'POST', 'class' => 'form-horizontal', 'id' => 'users')) }}
 	            	<div class="form-group">
 	            		{{ Form::label('Number of People', 'Number of People',
 	            						array('class' => 'control-label col-s-2 text')) }}
@@ -25,7 +25,7 @@
 	            		{{ Form::label('Include Description?', 'Include Description?',
 	            						array('class' => 'control-label col-s-2')) }}
 	            		{{ Form::checkbox('includeDescription', 'true', true) }}
-	            	</div><br>
+	            	</div><br id="insertError">
 	            	<div class="form-group">
 	            		{{ Form::submit('Submit') }}
 				{{ Form::close() }}
@@ -42,4 +42,8 @@
     </div>
 
 
+@stop
+
+@section('validation')
+<script type="text/javascript" src="/usersValidation.js"></script>
 @stop

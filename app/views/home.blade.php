@@ -18,13 +18,13 @@
     <div class="col-md-6">
         <br><br>
         <div class="row text-center">
-            <button class="btn-large"><a class="button" href="/pokeipsum">Lorem Ipsum Generator</a></button>
+            <button class="btn-large"><a class="button" href="/ipsum">Lorem Ipsum Generator</a></button>
         </div>
     </div>
     <div class="col-md-6">
         <br><br>
         <div class="row text-center">
-        	<button class="btn-large"><a class="button" href="/pokepeople">Random User Generator</a></button>
+        	<button class="btn-large"><a class="button" href="/users">Random User Generator</a></button>
         </div>
     </div>
 </div>

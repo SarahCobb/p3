@@ -27,3 +27,5 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-navbar.php
 https://www.google.com/fonts/specimen/Source+Code+Pro
 http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-forms.php
+https://github.com/fzaninotto/Faker
+https://github.com/samuelwilliams/LoremIpsum
