@@ -5,7 +5,6 @@
 @stop
 
 @section('content')
-
 <div class="row">
     <div class="col-md-4">
         <div class="column row text-center">
@@ -17,13 +16,8 @@
             {{ Form::close() }}
         </div>
     </div>
-    <div class="col-md-8">
-        <div class="column row text-center">
-
-        </div>
-    </div>
+    <div class="col-md-8"></div>
 </div>
-
 @stop
 
 @section('validation')

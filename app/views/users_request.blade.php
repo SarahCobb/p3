@@ -5,7 +5,6 @@
 @stop
 
 @section('content')
-
 <div class="row">
     <div class="col-md-4">
 	        <div class="column row text-center">
@@ -22,9 +21,14 @@
 				        {{ Form::checkbox('includeBirthday', 'true', true) }}
 	            	</div><br>
 	            	<div class="form-group">
-	            		{{ Form::label('Include Description?', 'Include Description?',
-	            						array('class' => 'control-label col-s-2')) }}
-	            		{{ Form::checkbox('includeDescription', 'true', true) }}
+				        {{ Form::label('Include Address?', 'Include Address?',
+				            			array('class' => 'control-label col-s-2')) }}
+				        {{ Form::checkbox('includeAddress', 'true', true) }}
+	            	</div><br>
+	            	<div class="form-group">
+				        {{ Form::label('Include Favorite Color?', 'Include Favorite Color?',
+				            			array('class' => 'control-label col-s-2')) }}
+				        {{ Form::checkbox('includeFavColor', 'true', true) }}
 	            	</div><br id="insertError">
 	            	<div class="form-group">
 	            		{{ Form::submit('Submit') }}
@@ -32,16 +36,8 @@
 	        </div>
 	    </div>
     </div>
-
-
-    <div class="col-md-8">
-	        <div class="column">
-	        	
-	        </div>
-	    </div>
+    <div class="col-md-8"></div>
     </div>
-
-
 @stop
 
 @section('validation')

@@ -5,7 +5,7 @@ body {
 	color: white;
 	margin-top:50px;
 	font-family: 'Source Code Pro', serif;
-	font-size: 15px;
+	font-size: 16px;
 }
 
 div {
@@ -21,7 +21,7 @@ h1 {
 }
 
 h2 {
-	font-color: white;
+	font-color: yellow;
 	font-size:22px;
 	padding-bottom: 10px;
 	text-align: center;
@@ -81,6 +81,7 @@ input[type="text"] {
 
 label {
 	color: yellow;
+	text-align: left!important;
 }
 
 label.text {

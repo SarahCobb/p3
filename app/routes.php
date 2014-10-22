@@ -38,12 +38,17 @@ Route::get('/users', function() {
 Route::post('/users', function() {
 	$numPeople = Input::get('numPeople');
 	$includeBirthday = Input::get('includeBirthday');
-	$includeDescription = Input::get('includeDescription');
+	$includeAddress = Input::get('includeAddress');
+	$includeFavColor = Input::get('includeFavColor');
 	$faker = Faker\Factory::create();
 	for ($i = 0; $i < $numPeople; $i++) {
-		$people[$i]['name'] = $faker->name;
+		$people[$i]['firstName'] = $faker->firstName($gender = null);
+		$people[$i]['lastName'] = $faker->lastName;
+		$people[$i]['emailDomain'] = $faker->freeEmailDomain;
 		$people[$i]['birthday'] = $faker->date($format = 'm-d-Y', $max = 'now', $min='1940');
-		$people[$i]['description'] = $faker->paragraph($nbSentences = 4);
+		$people[$i]['address'] = $faker->address;
+		$people[$i]['favColor'] = $faker->safeColorName;
+		$people[$i]['description'] = $faker->paragraph($nbSentences = 2);
 	};
 	$countPeople = 0;
 	return View::make('users')
@@ -51,5 +56,6 @@ Route::post('/users', function() {
 		->with('numPeople', $numPeople)
 		->with('countPeople', $countPeople)
 		->with('includeBirthday', $includeBirthday)
-		->with('includeDescription', $includeDescription);
+		->with('includeAddress', $includeAddress)
+		->with('includeFavColor', $includeFavColor);
 });
