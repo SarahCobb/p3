@@ -5,7 +5,7 @@ body {
 	color: white;
 	margin-top:75px;
 	font-family: 'Source Code Pro', serif;
-	font-size: 16px;
+	font-size: 14px;
 }
 
 div {
@@ -38,7 +38,6 @@ p {
 	font-color: white;
 	font-size: 14px;
 	margin:0;
-	font-size: 16px;
 	text-align: left;
 }
 
