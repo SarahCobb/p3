@@ -21,13 +21,13 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="/" class="navbar-brand">< Developer's Best Friend /></a>
+                    <a href="/" class="navbar-brand">&lt; Developer's Best Friend /&gt;</a>
                 </div>
                 <!-- Collection of nav links and other content for toggling -->
                 <div id="navbarCollapse" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="/ipsum">< Lorem Ipsum Generator /></a></li>
-                        <li><a href="/users">< Random User Generator /></a></li>
+                        <li><a href="/ipsum">&lt; Lorem Ipsum Generator /&gt;</a></li>
+                        <li><a href="/users">&lt; Random User Generator /&gt;</a></li>
                     </ul>
                 </div>
             </div>

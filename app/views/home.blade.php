@@ -17,13 +17,13 @@
     <div class="col-md-6">
         <br><br>
         <div class="row text-center">
-            <button class="btn-large"><a class="button" href="/ipsum">Lorem Ipsum Generator</a></button>
+            <a class="button" href="/ipsum"><button class="btn-large">Lorem Ipsum Generator</button></a>
         </div>
     </div>
     <div class="col-md-6">
         <br><br>
         <div class="row text-center">
-        	<button class="btn-large"><a class="button" href="/users">Random User Generator</a></button>
+        	<a class="button" href="/users"><button class="btn-large">Random User Generator</button></a>
         </div>
     </div>
 </div>

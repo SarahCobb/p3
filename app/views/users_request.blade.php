@@ -10,34 +10,32 @@
 	        <div class="column row text-center">
 	            {{ Form::open(array('url' => '/users', 'method' => 'POST', 'class' => 'form-horizontal', 'id' => 'users')) }}
 	            	<div class="form-group">
-	            		{{ Form::label('Number of People', 'Number of People',
+	            		{{ Form::label('numPeople', 'Number of People',
 	            						array('class' => 'control-label col-s-2 text')) }}
 	            		{{ Form::text('numPeople', '5',
 	            						array('class' => 'form-control')) }}
 	            	</div><br>
 	            	<div class="form-group">
-				        {{ Form::label('Include Birthday?', 'Include Birthday?',
+				        {{ Form::label('includeBirthday', 'Include Birthday?',
 				            			array('class' => 'control-label col-s-2')) }}
 				        {{ Form::checkbox('includeBirthday', 'true', true) }}
 	            	</div><br>
 	            	<div class="form-group">
-				        {{ Form::label('Include Address?', 'Include Address?',
+				        {{ Form::label('includeAddress', 'Include Address?',
 				            			array('class' => 'control-label col-s-2')) }}
 				        {{ Form::checkbox('includeAddress', 'true', true) }}
 	            	</div><br>
 	            	<div class="form-group">
-				        {{ Form::label('Include Favorite Color?', 'Include Favorite Color?',
+				        {{ Form::label('includeFavColor', 'Include Favorite Color?',
 				            			array('class' => 'control-label col-s-2')) }}
 				        {{ Form::checkbox('includeFavColor', 'true', true) }}
 	            	</div><br id="insertError">
-	            	<div class="form-group">
 	            		{{ Form::submit('Submit') }}
 				{{ Form::close() }}
 	        </div>
 	    </div>
     </div>
     <div class="col-md-8"></div>
-    </div>
 @stop
 
 @section('validation')
