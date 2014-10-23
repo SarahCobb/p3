@@ -2,7 +2,7 @@
 
 body {
 	background: #5e5e5e;
-	color: white;
+	color: #ffffff;
 	margin-top:100px;
 	font-family: 'Source Code Pro', serif;
 	font-size: 14px;
@@ -13,7 +13,7 @@ div {
 }
 
 h1 {
-	font-color: white;
+	font-color: #ffffff;
 	font-size: 26px;
 	font-weight: bold;
 	padding-bottom: 12px;
@@ -28,14 +28,14 @@ h2 {
 }
 
 h3 {
-	font-color: white;
+	font-color: #ffffff;
 	font-size: 18px;
 	padding-bottom: 8px;
 	text-align: center;
 }
 
 p {
-	font-color: white;
+	font-color: #ffffff;
 	font-size: 14px;
 	margin:0;
 	text-align: left;
@@ -46,18 +46,18 @@ p.center {
 }
 
 a {
-	color: white;
+	color: #ffffff;
 }
 
 a:hover {
-	color: white;
+	color: #ffffff;
 }
 
 a.button {
 	color: #0099FF;
 	font-weight: 700;
 	font-size: 24px;
-	background: white;
+	background: #ffffff;
 	padding: 10px;
 }
 
