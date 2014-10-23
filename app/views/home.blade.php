@@ -8,7 +8,7 @@
 <div class="row">
     <div class="col-md-12">
     	<h2>Welcome to Developer's Best Friend!</h2>
-		<p>Developer's Best Friend can create lorem ipsum text and random users for your database. Lorem Ipsum text will output as a PHP array, and users are served up as a JSON array.</p>
+		<p class="center">Developer's Best Friend can create lorem ipsum text and random users for your database. The Lorem Ipsum text generator will return a PHP array, and the Random User generator will return a JSON array.</p>
     </div>
 </div>
 <div class="row">

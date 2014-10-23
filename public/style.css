@@ -1,7 +1,7 @@
 /* Basic Styles */
 
 body {
-	background: black;
+	background: #5e5e5e;
 	color: white;
 	margin-top:100px;
 	font-family: 'Source Code Pro', serif;
@@ -21,7 +21,7 @@ h1 {
 }
 
 h2 {
-	font-color: yellow;
+	font-color: #FFFF66;
 	font-size:22px;
 	padding-bottom: 10px;
 	text-align: center;
@@ -41,6 +41,10 @@ p {
 	text-align: left;
 }
 
+p.center {
+	text-align: center;
+}
+
 a {
 	color: white;
 }
@@ -50,7 +54,7 @@ a:hover {
 }
 
 a.button {
-	color: blue;
+	color: #0099FF;
 	font-weight: 700;
 	font-size: 24px;
 	background: white;
@@ -68,18 +72,20 @@ form {
 }
 
 input[type='submit'] {
-	color: red;
-	font-weight: 600;
+	color: #FF5050;
+	font-weight: 700;
 }
 
 input[type="text"] {
-	color: black;
+	color: #5e5e5e;
 }
 
 
 label {
-	color: yellow;
+	color: #FFFF66;
 	text-align: left!important;
+	font-size: 14px;
+	font-weight: 500;
 }
 
 label.text {
@@ -87,7 +93,7 @@ label.text {
 }
 
 label.error {
-	color: red;
+	color: #FF5050;
 	font-size: 14px;
 	margin-bottom: 20px;
 }
@@ -107,12 +113,12 @@ label#numPeople-error {
 }
 
 .highlight {
-	color: blue;
+	color: #0099FF;
 	font-weight: 600;
 }
 
 .subHighlight {
-	color: green;
+	color: #66FF66;
 	font-weight: 600;
 }
 
@@ -126,4 +132,8 @@ label#numPeople-error {
 
 .column {
 	margin: 50px;
+}
+
+.container {
+	max-width: 1000px;
 }
