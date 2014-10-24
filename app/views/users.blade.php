@@ -37,29 +37,31 @@
     </div>
     <div class="col-md-8">
 	        <div class="column">
-	        	<p><span class="doubleInverseIndent">[</span><br><br>
-	        	@foreach($people as $entry => $person)
-	        		<?php $countPeople++ ?>
-	        	    <p><span class="inverseIndent">{</span><br>
-	        	    <span class="highlight">"Name" :</span> "{{$person['firstName']}} {{$person['lastName']}}",</p>
-	        	    <p><span class="highlight">"Email" :</span> "{{$person['firstName']}}.{{$person['lastName']}}@<?=$person['emailDomain']?>",</p>
-	        		@if ($includeBirthday)
-	        			<p><span class="highlight">"Birthday" :</span> "{{ $person['birthday'] }}",</p>
-	        		@endif
-	        		@if ($includeAddress)
-	        			<p><span class="highlight">"Address" :</span> "{{ $person['address'] }}",</p>
-	        		@endif
-	        		@if ($includeFavColor)
-	        			<p><span class="highlight">"Favorite Color" :</span> "{{ $person['favColor'] }}",</p>
-	        		@endif
-	        			<p><span class="highlight">"Description" :</span> "{{ $person['description'] }}"
-        			@if ($countPeople == $numPeople)
-        				<br><span class="inverseIndent">}</span></p></br>
-        			@else
-        				<br><span class="inverseIndent">},</span></p></br>
-        			@endif
-	        	@endforeach
-	        	<p><span class="doubleInverseIndent">]</span><br>
+	        	@if (isset($people)) 
+		        	<p><span class="doubleInverseIndent">[</span><br><br>
+			        	@foreach($people as $entry => $person)
+			        		<?php $countPeople++ ?>
+			        	    <p><span class="inverseIndent">{</span><br>
+			        	    <span class="highlight">"Name" :</span> "{{$person['firstName']}} {{$person['lastName']}}",</p>
+			        	    <p><span class="highlight">"Email" :</span> "{{$person['firstName']}}.{{$person['lastName']}}@<?=$person['emailDomain']?>",</p>
+			        		@if ($includeBirthday)
+			        			<p><span class="highlight">"Birthday" :</span> "{{ $person['birthday'] }}",</p>
+			        		@endif
+			        		@if ($includeAddress)
+			        			<p><span class="highlight">"Address" :</span> "{{ $person['address'] }}",</p>
+			        		@endif
+			        		@if ($includeFavColor)
+			        			<p><span class="highlight">"Favorite Color" :</span> "{{ $person['favColor'] }}",</p>
+			        		@endif
+			        			<p><span class="highlight">"Description" :</span> "{{ $person['description'] }}"
+		        			@if ($countPeople == $numPeople)
+		        				<br><span class="inverseIndent">}</span></p></br>
+		        			@else
+		        				<br><span class="inverseIndent">},</span></p></br>
+		        			@endif
+			        	@endforeach
+	        		<p><span class="doubleInverseIndent">]</span><br>
+	        	@endif
 	        </div>
 	    </div>
     </div>

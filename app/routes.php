@@ -17,7 +17,7 @@ Route::get('/', function()
 });
 
 Route::get('/ipsum', function() {
-	return View::make('ipsum_request');
+	return View::make('ipsum');
 });
 
 Route::post('/ipsum', function() {
@@ -32,7 +32,7 @@ Route::post('/ipsum', function() {
 });
 
 Route::get('/users', function() {
-	return View::make('users_request');
+	return View::make('users');
 });
 
 Route::post('/users', function() {
